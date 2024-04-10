@@ -3,6 +3,7 @@ package 动态规划;
 import 二叉树的遍历.TreeNode;
 
 public class 打家劫舍III {
+    //树形dp
     public int rob(TreeNode root) {
         int[] res = robAction(root);
         return Math.max(res[0], res[1]);
