@@ -23,6 +23,7 @@ public class 共同祖先 {
             int f2 = 2;
             while (arr[f1] != 0) {
                 deep1++;
+                //更新父的父节点
                 f1 = arr[f1];
             }
             while (arr[f2] != 0) {

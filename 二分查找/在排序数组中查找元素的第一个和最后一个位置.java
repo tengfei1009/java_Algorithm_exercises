@@ -21,7 +21,7 @@ public class 在排序数组中查找元素的第一个和最后一个位置 {
         int result = -1;
         int left = 0 ;
         int right = nums.length-1;
-        while (left <=right) {
+        while (left <right) {
             int mid = left + (right-left)/2;
             if(nums[mid]>=target){
                 if(nums[mid] == target) {
@@ -40,7 +40,7 @@ public class 在排序数组中查找元素的第一个和最后一个位置 {
         int result = 0;
         int left = 0 ;
         int right = nums.length-1;
-        while (left <=right) {
+        while (left <right) {
             int mid = left + (right-left)/2;
             if(nums[mid]<=target){
                 if(nums[mid] == target) {

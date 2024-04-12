@@ -38,6 +38,7 @@ public class 马的遍历 {
                 int nextX = currX + dx[i];
                 int nextY = currY + dy[i];
 
+                //新坐标可以到达,就入队
                 if (nextX >= 0 && nextX < n && nextY >= 0 && nextY < m && steps[nextX][nextY] == -1) {
                     steps[nextX][nextY] = steps[currX][currY] + 1; //一直不断更新步数,使得这个棋盘上的值被不断更新
                     queue.offer(new int[]{nextX, nextY});//入队,一直不断入队
@@ -50,6 +51,5 @@ public class 马的遍历 {
             }
             System.out.println();
         }
-
     }
 }

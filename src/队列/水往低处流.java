@@ -21,7 +21,6 @@ public class 水往低处流 {
                 cells.add(new Cell(i, j, grid[i][j]));
             }
         }
-        // 对整数数组进行倒序排序
         Collections.sort(cells, (o1, o2) -> o2.value - o1.value);
 
 
